@@ -1,0 +1,21 @@
+kriteria_oci = int(input("Zadej kritérium očí (1-10): "))
+kriteria_vlasy = int(input("Zadej kritérium vlasů (1-10): "))
+ 
+if kriteria_oci == 10 and kriteria_vlasy == 10:
+  print("Jdu na rande!")
+elif kriteria_oci == 10 and kriteria_vlasy == 9:
+  print("Jdu na rande s podmínkou!")
+elif kriteria_oci == 9 and kriteria_vlasy == 10:
+  print("Jdu na rande s podmínkou!")
+elif kriteria_oci == 9 and kriteria_vlasy == 9:
+  print("Hodně váhám, ani jedno!")
+else:
+  print("Nikam nejdu!")
+
+vek = int(input("Zadej věk: "))
+barva_vlasu = input("Zadej barvu vlasů: ")
+ 
+if vek >= 15 and (barva_vlasu == "modrá" or barva_vlasu == "zelená"):
+  print("Půjdu na rande!")
+else:
+  print("Na rande nepůjdu!")
